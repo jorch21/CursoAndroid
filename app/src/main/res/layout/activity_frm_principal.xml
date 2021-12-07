@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".frmPrincipal">
+
+    <Button
+        android:id="@+id/btnEjercicio6"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="10dp"
+        android:text="EJERCICIO 6"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnEjercicio5"
+        app:layout_constraintTop_toBottomOf="@+id/btnEjercicio3" />
+
+    <Button
+        android:id="@+id/btnEjercicio5"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:text="EJERCICIO 5"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/btnEjercicio4"
+        app:layout_constraintTop_toBottomOf="@+id/btnEjercicio2" />
+
+    <Button
+        android:id="@+id/btnEjercicio4"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="24dp"
+        android:text="EJERCICIO 4"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnEjercicio1" />
+
+    <TextView
+        android:id="@+id/lblTituloCalc"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="20dp"
+        android:text="ACTIVIDADES DESARROLLO DE APLICACIONES MOVILES"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnEjercicio1"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="10dp"
+        android:backgroundTint="#621AE3"
+        android:text="EJERCICIO 1"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@+id/btnEjercicio2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblTituloCalc" />
+
+    <Button
+        android:id="@+id/btnEjercicio3"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="10dp"
+        android:text="EJERCICIO 3"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnEjercicio2"
+        app:layout_constraintTop_toBottomOf="@+id/lblTituloCalc" />
+
+    <Button
+        android:id="@+id/btnEjercicio2"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="10dp"
+        android:text="EJERCICIO 2"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@+id/btnEjercicio3"
+        app:layout_constraintStart_toEndOf="@+id/btnEjercicio1"
+        app:layout_constraintTop_toBottomOf="@+id/lblTituloCalc" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

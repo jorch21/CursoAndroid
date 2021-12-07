@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".frmCalculadora">
+
+    <Button
+        android:id="@+id/btnDividir"
+        android:layout_width="65dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="40dp"
+        android:text="/"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/btnMultiplicar"
+        app:layout_constraintTop_toBottomOf="@+id/lblResultado" />
+
+    <Button
+        android:id="@+id/btnMultiplicar"
+        android:layout_width="66dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="40dp"
+        android:text="x"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/btnResta"
+        app:layout_constraintTop_toBottomOf="@+id/lblResultado" />
+
+    <Button
+        android:id="@+id/btnResta"
+        android:layout_width="63dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="40dp"
+        android:text="-"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/btnSuma"
+        app:layout_constraintTop_toBottomOf="@+id/lblResultado" />
+
+    <EditText
+        android:id="@+id/txtNumeroUno"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:ems="10"
+        android:inputType="number|textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblTituloCalc"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <EditText
+        android:id="@+id/txtNumeroDos"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:ems="10"
+        android:inputType="number|textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtNumeroUno"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/lblTituloCalc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="10dp"
+        android:text="CALCULADORA"
+        android:textAlignment="center"
+        android:textColor="#2F0971"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lblMensajeCalc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="50dp"
+        android:text="El resultado es :"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.039"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtNumeroDos" />
+
+    <TextView
+        android:id="@+id/lblResultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="10dp"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblMensajeCalc" />
+
+    <Button
+        android:id="@+id/btnSuma"
+        android:layout_width="65dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="40dp"
+        android:text="+"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblResultado" />
+</androidx.constraintlayout.widget.ConstraintLayout>

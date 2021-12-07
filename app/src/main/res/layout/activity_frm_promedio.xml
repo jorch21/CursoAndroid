@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".frmPromedio">
+
+    <EditText
+        android:id="@+id/txtFinal"
+        android:layout_width="114dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="20dp"
+        android:ems="10"
+        android:hint="EF"
+        android:inputType="number|textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.707"
+        app:layout_constraintStart_toEndOf="@+id/txtParcial"
+        app:layout_constraintTop_toBottomOf="@+id/txtNota4"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/txtParcial"
+        android:layout_width="114dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="EP"
+        android:inputType="number|textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblExamenes" />
+
+    <EditText
+        android:id="@+id/txtNota4"
+        android:layout_width="114dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:ems="10"
+        android:hint="P4"
+        android:inputType="number|textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.707"
+        app:layout_constraintStart_toEndOf="@+id/txtNota2"
+        app:layout_constraintTop_toBottomOf="@+id/txtNota3" />
+
+    <EditText
+        android:id="@+id/txtNota3"
+        android:layout_width="114dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="20dp"
+        android:ems="10"
+        android:hint="P3"
+        android:inputType="number|textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toEndOf="@+id/txtNota1"
+        app:layout_constraintTop_toBottomOf="@+id/btnVerificar" />
+
+    <EditText
+        android:id="@+id/txtNota2"
+        android:layout_width="114dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="P2"
+        android:inputType="number|textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtNota1" />
+
+    <EditText
+        android:id="@+id/txtNombres"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="20dp"
+        android:ems="10"
+        android:hint="Ingrese su nombre"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnVerificar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:text="Verificar Promedio"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtNombres" />
+
+    <TextView
+        android:id="@+id/lblTituloNotas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="80dp"
+        android:text="Ingrese sus Notas de Practicas"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnVerificar" />
+
+    <EditText
+        android:id="@+id/txtNota1"
+        android:layout_width="114dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="P1"
+        android:inputType="number|textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblTituloNotas" />
+
+    <TextView
+        android:id="@+id/lblExamenes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="60dp"
+        android:text="Ingrese sus Examenes:"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtNota4" />
+
+    <TextView
+        android:id="@+id/lblRespuesta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="80dp"
+        android:text="Su promedio es: "
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtFinal" />
+
+    <TextView
+        android:id="@+id/lblMuestra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="20dp"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.553"
+        app:layout_constraintStart_toEndOf="@+id/lblRespuesta"
+        app:layout_constraintTop_toBottomOf="@+id/lblRespuesta" />
+</androidx.constraintlayout.widget.ConstraintLayout>
