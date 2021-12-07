@@ -13,9 +13,15 @@ class frmDatos : AppCompatActivity() {
     }
 
     fun abrirDatos(){
-        var vlDatos = txtNombreDatos.text.toString()
-        val vlAbrirResumen = Intent(this, frmResumen::class.java)
-        vlAbrirResumen.putExtra("vtNombre",vlDatos)
-        startActivity(vlAbrirResumen)
+        btnTransferir.setOnClickListener(){
+            var vlDatos = txtNombreDatos.text.toString()
+            var vlDireccion = txtDireccion.text.toString()
+            var vlTelefono = txtTelefono.text.toString()
+            val vlAbrirResumen = Intent(this, frmResumen::class.java)
+            vlAbrirResumen.putExtra("vtNombre",vlDatos)
+            vlAbrirResumen.putExtra("vtDireccion",vlDireccion)
+            vlAbrirResumen.putExtra("vtTelefono",vlTelefono)
+            startActivity(vlAbrirResumen)
+        }
     }
 }

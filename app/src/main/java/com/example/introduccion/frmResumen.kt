@@ -11,6 +11,9 @@ class frmResumen : AppCompatActivity() {
 
         val bundle:Bundle? = intent.extras
         var vtNombre = bundle!!.getString("vtNombre")
-        lblResumen.text = vtNombre
+        var vtDireccion = bundle!!.getString("vtDireccion")
+        var vtTelefono = bundle!!.getString("vtTelefono")
+        lblResumen.text = "Nombre: $vtNombre \nDireccion: $vtDireccion \nTelefono: $vtTelefono"
+
     }
 }
