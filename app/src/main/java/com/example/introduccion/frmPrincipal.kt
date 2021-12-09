@@ -16,6 +16,7 @@ class frmPrincipal : AppCompatActivity() {
         abrirSueldos()
         abrirFuncionesFecha()
         abrirResumenDatos()
+        recibirUsuario()
     }
 
     fun abrirCalculadora()
@@ -64,5 +65,11 @@ class frmPrincipal : AppCompatActivity() {
             val abrirDatos = Intent(this, frmDatos::class.java)
             startActivity(abrirDatos)
         }
+    }
+
+    fun recibirUsuario(){
+        val bundle:Bundle? = intent.extras
+        val vtUsuario = bundle!!.getString("vtUsuario")
+        lblMensajeBienvenida.text = "Bienvenido!!! \nUsuario conectado: $vtUsuario"
     }
 }

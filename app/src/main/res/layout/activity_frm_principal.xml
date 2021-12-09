@@ -95,4 +95,18 @@
         app:layout_constraintStart_toEndOf="@+id/btnEjercicio1"
         app:layout_constraintTop_toBottomOf="@+id/lblTituloCalc" />
 
+    <TextView
+        android:id="@+id/lblMensajeBienvenida"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="100dp"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
